@@ -1,4 +1,4 @@
 appId: fr.bakhaow.vlauncher
 publish:
   provider: github
-  token: [YOUR GITHUB ACCESS TOKEN]
+  token: cf9a37b82a896be39e56bae69c85a0ede543fded
