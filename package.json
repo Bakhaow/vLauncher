@@ -1,0 +1,33 @@
+{
+  "name": "vlauncher",
+  "version": "1.0.0",
+  "description": "Village Launcher - Electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bakhaow/vLauncher.git"
+  },
+  "keywords": [
+    "vLauncher",
+    "Launcher",
+    "Electron",
+    "Bakhaow",
+    "Village"
+  ],
+  "author": "Bakhaow",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Bakhaow/vLauncher/issues"
+  },
+  "homepage": "https://github.com/Bakhaow/vLauncher#readme",
+  "devDependencies": {
+    "electron": "^8.2.0",
+    "electron-builder": "^22.4.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.2.5"
+  }
+}
