@@ -1,6 +1,6 @@
 {
   "name": "vlauncher",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Village Launcher - Electron",
   "main": "index.js",
   "scripts": {
