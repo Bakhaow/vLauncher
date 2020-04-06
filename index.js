@@ -45,7 +45,6 @@ function createWindow () {
   }));
 
   win.setMenu(null);
-  win.webContents.openDevTools();
 
   win.on('restore', (e) => {
       win.setSize(winWidth, winHeight);
