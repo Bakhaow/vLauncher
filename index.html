@@ -10,18 +10,20 @@
       background-color: #eaeaea;
       text-align: center;
     }
+
     #notification {
       position: fixed;
-      bottom: 20px;
-      left: 20px;
-      width: 200px;
+      bottom: 200px;
+      left: 200px;
+      width: 60%;
       padding: 20px;
       border-radius: 5px;
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
+
     .hidden {
-      display: none;
+      displaye: none;
     }
   </style>
 </head>
@@ -29,7 +31,7 @@
   <h1>Electron Auto Update Example</h1>
   <p id="version"></p>
   <div id="notification" class="hidden">
-  <p id="message"></p>
+  <p id="message">A new update is available. Downloading now...</p>
   <button id="close-button" onClick="closeNotification()">
     Close
   </button>

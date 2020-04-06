@@ -1,0 +1,28 @@
+#profil {
+  z-index: 500;
+  padding: 20px;
+  position: fixed;
+  left: 30%;
+  top: 35px;
+  width: 69%;
+}
+
+.profil-header {
+  padding: 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+}
+
+.profil-box {
+  font-size: 16px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 400px;
+  border-bottom: 1px solid grey;
+}
+
+.profil-footer {
+  padding: 20px;
+}
