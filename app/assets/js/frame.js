@@ -10,14 +10,14 @@ ipcRenderer.on('app_version', (event, arg) => {
 
 ipcRenderer.on('update_available', () => {
   ipcRenderer.removeAllListeners('update_available');
-  message.innerText = 'Une mise à jour est disponible ... Téléchargement en cours';
-  notification.classList.remove('hidden');
+  $('#message').html('Une mise à jour est disponible ... Téléchargement en cours');
+  $('#notification').removeClass('hidden');
 });
 ipcRenderer.on('update_downloaded', () => {
   ipcRenderer.removeAllListeners('update_downloaded');
   message.innerText = 'Mise à jour téléchargée ... ';
-  restartButton.classList.remove('hidden');
-  notification.classList.remove('hidden');
+  $('#restart-button').removeClass('hidden');
+  $('#notification').removeClass('hidden');
 });
 
 function closeNotification() {
