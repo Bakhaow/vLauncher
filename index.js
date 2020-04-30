@@ -120,7 +120,7 @@ async function setActivity() {
   }
   rpc.setActivity({
     details: 'sur vLauncher',
-    state: 'https://www.google.com',
+    state: 'NIK ZEBI',
     startTimestamp,
     largeImageKey: 'background_dl1',
     largeImageText: 'Rejoins nous.',

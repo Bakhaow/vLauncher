@@ -1,12 +1,16 @@
 {
   "name": "vlauncher",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Village Launcher - Electron",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always"
+  },
+  "win": {
+    "certificateFile": "certs/RootCA.pfx",
+    "certificatePassword": "saqzsaqz"
   },
   "repository": {
     "type": "git",
