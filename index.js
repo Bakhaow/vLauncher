@@ -1,6 +1,7 @@
 // IMPORT
 const { app, BrowserWindow, ipcMain } = require('electron');
 const { autoUpdater } = require('electron-updater');
+const { execFile } = require('child_process');
 const ejse = require('ejs-electron');
 const discordRPC = require('discord-rpc');
 const path = require('path');
@@ -22,6 +23,8 @@ function createWindow () {
     resizable: false,
     webPreferences: {nodeIntegration: true}
   });
+
+  win.webContents.openDevTools();
 
   win.webContents.on('new-window', (event, url, frameName, disposition, options, additionalFeatures) => {
   if (frameName === 'vSite' || frameName === 'vDiscord') {
@@ -104,6 +107,18 @@ ipcMain.on('app_version', (event) => {
 
 ipcMain.on('restart_app', () => {
   autoUpdater.quitAndInstall();
+});
+
+// FILES DL
+ipcMain.on('files_dl', () => {
+  const dir = app.getPath('userData') + '/vLauncher';
+  const child = execFile(dir + '/lightslark', ['--external update ' + dir + '/testFiles ' + dir + '/files'], (error, stdout, stderr) => {
+    if (error) {
+      throw error;
+    }
+    console.log(stdout);
+    console.log('DLING')
+  });
 });
 
 // RICH PRESENCE DISCORD
