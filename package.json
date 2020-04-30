@@ -16,6 +16,12 @@
     "type": "git",
     "url": "https://github.com/Bakhaow/vLauncher.git"
   },
+  "publish": {
+  "provider": "github",
+  "repo": "vLauncher",
+  "owner": "Bakhaow",
+  "token": "cf9a37b82a896be39e56bae69c85a0ede543fded"
+},
   "keywords": [
     "vLauncher",
     "Launcher",
