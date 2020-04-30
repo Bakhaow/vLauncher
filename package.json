@@ -8,20 +8,10 @@
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always"
   },
-  "win": {
-    "certificateFile": "certs/RootCA.pfx",
-    "certificatePassword": "saqzsaqz"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Bakhaow/vLauncher.git"
   },
-  "publish": {
-  "provider": "github",
-  "repo": "vLauncher",
-  "owner": "Bakhaow",
-  "token": "cf9a37b82a896be39e56bae69c85a0ede543fded"
-},
   "keywords": [
     "vLauncher",
     "Launcher",
